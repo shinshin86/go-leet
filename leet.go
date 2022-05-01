@@ -1,10 +1,7 @@
-package main
+package leet
 
 import (
-	"flag"
-	"fmt"
 	"math/rand"
-	"os"
 	"strings"
 	"time"
 )
@@ -54,31 +51,7 @@ func getLeetIndex(c string, leetIndex []string) int {
 	return -1
 }
 
-func flagUsage() {
-	fmt.Println(`go-leet is leetspeak converter.
-
-Usage:
-go-leet {input text}
-go-leet help
-`)
-}
-
-func main() {
-	flag.Usage = flagUsage
-
-	var input string
-	if len(os.Args) == 2 {
-		input = os.Args[1]
-
-		if input == "help" {
-			flag.Usage()
-			os.Exit(0)
-		}
-	} else {
-		flag.Usage()
-		os.Exit(1)
-	}
-
+func Leet(input string) string {
 	leets := getLeetList()
 
 	var leetIndex []string
@@ -101,5 +74,5 @@ func main() {
 
 	}
 
-	fmt.Println(leetStr)
+	return leetStr
 }

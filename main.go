@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	. "github.com/shinshin86/go-leet"
+	. "github.com/shinshin86/go-leet/leet"
 )
 
 func flagUsage() {

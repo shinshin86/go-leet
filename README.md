@@ -1,4 +1,6 @@
 # go-leet
+[![CI](https://github.com/shinshin86/go-leet/actions/workflows/ci.yml/badge.svg)](https://github.com/shinshin86/go-leet/actions/workflows/ci.yml)
+
 Implements leetspeak converter at Go.  
 This is created to learn Go.
 
@@ -6,7 +8,7 @@ This is created to learn Go.
 
 ```sh
 # Install
-go get github.com/shinshin86/go-leet
+go install github.com/shinshin86/go-leet@latest
 
 go-leet hello
 # => ]~[E|_|_<>
